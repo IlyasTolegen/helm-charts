@@ -1,0 +1,30 @@
+global:
+  environment: dev
+
+nginx:
+  replicaCount: 3
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      cpu: 100m
+      memory: 128Mi
+
+mysql:
+  replicaCount: 3
+  storage:
+    size: 1Gi
+  resources:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 200m
+      memory: 256Mi
+
+echo-daemon:
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi

@@ -1,0 +1,5 @@
+apiVersion: v2
+name: mysql
+description: MySQL stateful app chart with StatefulSet, Service, NetworkPolicy, Role
+version: 0.1.0
+appVersion: "8.0"

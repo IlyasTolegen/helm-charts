@@ -1,0 +1,12 @@
+dependencies:
+- name: nginx
+  repository: file://../nginx
+  version: 0.1.0
+- name: mysql
+  repository: file://../mysql
+  version: 0.1.0
+- name: echo-daemon
+  repository: file://../echo-daemon
+  version: 0.1.0
+digest: sha256:7545d1be0b2978c4b16439695a63b9721b2f2a5ac34821c932c21fec3f8a608c
+generated: "2026-04-01T02:21:35.991269+05:00"

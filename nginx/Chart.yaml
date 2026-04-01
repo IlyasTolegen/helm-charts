@@ -1,0 +1,5 @@
+apiVersion: v2
+name: nginx
+description: Nginx stateless app chart with Deployment, Service, Ingress, NetworkPolicy, Role
+version: 0.1.0
+appVersion: "1.21"

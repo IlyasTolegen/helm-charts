@@ -1,0 +1,14 @@
+{{- if .Values.service.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "echoDaemon.fullname" . }}
+  labels:
+    {{- include "echoDaemon.labels" . | nindent 4 }}
+spec:
+  selector:
+    {{- include "echoDaemon.selectorLabels" . | nindent 4 }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 8080
+{{- end }}

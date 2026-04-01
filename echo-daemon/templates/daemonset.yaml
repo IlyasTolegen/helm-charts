@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: {{ include "echoDaemon.fullname" . }}
+  labels:
+    {{- include "echoDaemon.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "echoDaemon.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "echoDaemon.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - name: echo
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        command: ["/bin/sh", "-c"]
+        args: ["while true; do echo \"Hello from $(hostname) at $(date)\"; sleep 10; done"]
+        resources:
+          {{- toYaml .Values.resources | nindent 10 }}

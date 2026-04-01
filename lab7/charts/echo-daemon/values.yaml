@@ -1,0 +1,13 @@
+image:
+  repository: alpine
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  enabled: false
+  port: 8080
+networkPolicy:
+  enabled: true
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
