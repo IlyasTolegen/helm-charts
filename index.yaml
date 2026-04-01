@@ -3,16 +3,16 @@ entries:
   echo-daemon:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-02T00:19:11.027858+05:00"
+    created: "2026-04-02T00:22:01.045901+05:00"
     description: Echo daemon DaemonSet chart
-    digest: 9d313e737291f5c7b1575ae58c33398b24f1094d3b698650cb6af3c39292861f
+    digest: 3dc86bca69c29769766ff3bd03e8d062a8ec0cd2adc901683e041757c1d4be12
     name: echo-daemon
     urls:
     - https://ilyastolegen.github.io/helm-charts/echo-daemon-0.1.0.tgz
     version: 0.1.0
   lab7:
   - apiVersion: v2
-    created: "2026-04-02T00:19:11.030175+05:00"
+    created: "2026-04-02T00:22:01.047539+05:00"
     dependencies:
     - name: nginx
       repository: file://../nginx
@@ -24,7 +24,7 @@ entries:
       repository: file://../echo-daemon
       version: 0.1.0
     description: Combined application for Lab7 (nginx, mysql, echo-daemon)
-    digest: cdd8c32104da41874f739db8211de16acfd80b8630d543de47753bd3ff30d622
+    digest: e6220188cb874a5963f97688cbade62a9b07953c3c642a7d29c9a217cf31770b
     name: lab7
     urls:
     - https://ilyastolegen.github.io/helm-charts/lab7-0.1.0.tgz
@@ -32,7 +32,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "8.0"
-    created: "2026-04-02T00:19:11.031237+05:00"
+    created: "2026-04-02T00:22:01.048078+05:00"
     description: MySQL stateful app chart with StatefulSet, Service, NetworkPolicy,
       Role
     digest: 9682387a34ae6802a25fd6ba041f2d519eea46862a712b4c34954365e1a46779
@@ -43,7 +43,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: "1.21"
-    created: "2026-04-02T00:19:11.032115+05:00"
+    created: "2026-04-02T00:22:01.048615+05:00"
     description: Nginx stateless app chart with Deployment, Service, Ingress, NetworkPolicy,
       Role
     digest: aba1f24e2a01ff363e54dbac41c1db74c09e4c74d7d062d72d7ca2edd728c216
@@ -51,4 +51,4 @@ entries:
     urls:
     - https://ilyastolegen.github.io/helm-charts/nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-02T00:19:11.027071+05:00"
+generated: "2026-04-02T00:22:01.043254+05:00"
