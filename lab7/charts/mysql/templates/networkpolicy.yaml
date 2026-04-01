@@ -14,7 +14,7 @@ spec:
   - Egress
   ingress:
   - ports:
-      port: {{ .Values.service.port | default 3306 }}
+    - port: {{ .Values.service.port | default 3306 }}
       protocol: TCP
   egress:
   - to:
