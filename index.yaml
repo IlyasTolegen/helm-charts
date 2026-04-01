@@ -3,16 +3,16 @@ entries:
   echo-daemon:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-02T00:22:01.045901+05:00"
+    created: "2026-04-02T00:24:55.390153+05:00"
     description: Echo daemon DaemonSet chart
-    digest: 3dc86bca69c29769766ff3bd03e8d062a8ec0cd2adc901683e041757c1d4be12
+    digest: f15dc5ffd8aa1c77af9e21b0a695884a7afec3a5e2a7f2eb7c2727b93d2bffd0
     name: echo-daemon
     urls:
     - https://ilyastolegen.github.io/helm-charts/echo-daemon-0.1.0.tgz
     version: 0.1.0
   lab7:
   - apiVersion: v2
-    created: "2026-04-02T00:22:01.047539+05:00"
+    created: "2026-04-02T00:24:55.393674+05:00"
     dependencies:
     - name: nginx
       repository: file://../nginx
@@ -24,7 +24,7 @@ entries:
       repository: file://../echo-daemon
       version: 0.1.0
     description: Combined application for Lab7 (nginx, mysql, echo-daemon)
-    digest: e6220188cb874a5963f97688cbade62a9b07953c3c642a7d29c9a217cf31770b
+    digest: 5201720d6a174c8f22cdf6057f41f2896ecc6d8b7cb2443d45754e2ad11b8618
     name: lab7
     urls:
     - https://ilyastolegen.github.io/helm-charts/lab7-0.1.0.tgz
@@ -32,7 +32,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "8.0"
-    created: "2026-04-02T00:22:01.048078+05:00"
+    created: "2026-04-02T00:24:55.395842+05:00"
     description: MySQL stateful app chart with StatefulSet, Service, NetworkPolicy,
       Role
     digest: 9682387a34ae6802a25fd6ba041f2d519eea46862a712b4c34954365e1a46779
@@ -43,12 +43,12 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: "1.21"
-    created: "2026-04-02T00:22:01.048615+05:00"
+    created: "2026-04-02T00:24:55.396722+05:00"
     description: Nginx stateless app chart with Deployment, Service, Ingress, NetworkPolicy,
       Role
-    digest: aba1f24e2a01ff363e54dbac41c1db74c09e4c74d7d062d72d7ca2edd728c216
+    digest: 415e4f31b163e51fc58f2ae0929a95ad9b72a456630612a49a366d2ad9aba2fc
     name: nginx
     urls:
     - https://ilyastolegen.github.io/helm-charts/nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-02T00:22:01.043254+05:00"
+generated: "2026-04-02T00:24:55.384076+05:00"
