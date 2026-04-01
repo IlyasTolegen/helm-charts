@@ -3,7 +3,7 @@ entries:
   echo-daemon:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-02T00:24:55.390153+05:00"
+    created: "2026-04-02T00:29:11.746905+05:00"
     description: Echo daemon DaemonSet chart
     digest: f15dc5ffd8aa1c77af9e21b0a695884a7afec3a5e2a7f2eb7c2727b93d2bffd0
     name: echo-daemon
@@ -12,7 +12,7 @@ entries:
     version: 0.1.0
   lab7:
   - apiVersion: v2
-    created: "2026-04-02T00:24:55.393674+05:00"
+    created: "2026-04-02T00:29:11.749416+05:00"
     dependencies:
     - name: nginx
       repository: file://../nginx
@@ -24,7 +24,7 @@ entries:
       repository: file://../echo-daemon
       version: 0.1.0
     description: Combined application for Lab7 (nginx, mysql, echo-daemon)
-    digest: 5201720d6a174c8f22cdf6057f41f2896ecc6d8b7cb2443d45754e2ad11b8618
+    digest: 77912a7bae915b64f3a554f6c745054772a88a73ee4d46a1e0560b6e57f15103
     name: lab7
     urls:
     - https://ilyastolegen.github.io/helm-charts/lab7-0.1.0.tgz
@@ -32,7 +32,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "8.0"
-    created: "2026-04-02T00:24:55.395842+05:00"
+    created: "2026-04-02T00:29:11.749981+05:00"
     description: MySQL stateful app chart with StatefulSet, Service, NetworkPolicy,
       Role
     digest: 9682387a34ae6802a25fd6ba041f2d519eea46862a712b4c34954365e1a46779
@@ -43,7 +43,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: "1.21"
-    created: "2026-04-02T00:24:55.396722+05:00"
+    created: "2026-04-02T00:29:11.750377+05:00"
     description: Nginx stateless app chart with Deployment, Service, Ingress, NetworkPolicy,
       Role
     digest: 415e4f31b163e51fc58f2ae0929a95ad9b72a456630612a49a366d2ad9aba2fc
@@ -51,4 +51,4 @@ entries:
     urls:
     - https://ilyastolegen.github.io/helm-charts/nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-02T00:24:55.384076+05:00"
+generated: "2026-04-02T00:29:11.745734+05:00"
