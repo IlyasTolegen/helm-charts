@@ -1,0 +1,13 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  name: mysql-secret
+  namespace: default
+spec:
+  encryptedData:
+    password: AgCPuaY+WCkAaXOThVbgYEjMLI+Ql6fm6cIgcpfhamxGZHPQhya1zqf4CF7rWvSdjLSjwZxjZgKrKt28vFY6c5IzdAL1XymNvMGGYjklkbOn8oeIVpuGYKXVk8cfiD+X44VQ4YkPi5yQ73B2zcbDj9cH7aUjtSbZEPJ61kJqBuzJAuw/9BnWl/okk2rWvjoJma+bXMFSze9RQyQuhtGJ6f3ccIcQItySPIUMzMd4BbK4eyzT9/91GINuu/o7L1V1IvFXIKX1Ig4AftUONeJwAqWiU2HMH+5UfcRp/o+K7iGXC8xXeRbxePw1iP+CiXOHqw2wBGG/OvXEYpVRQ7cNCUKnRPCQvxnyB2Qt8eEsaRDaknw0w9nV5X/cQGzMeh728nPb3mgzleCqrcYKQVwuSD2tbO1QLbYzNtp9kW1vzabYrA7dGkGUWVhb+fxdtAZZuhkTS1QJEyvmihBWBdo5ikbHXwMANHd/5k1wZBUQCByN8jP6p+En7+VImeWfMCcBuosKTviM/y+Kt7UhOaqYxnC6pec70ujs1zjOiayMZ9nHnQiSK8jCsBac9K355QALXAJra5pBF7nvCHvECUIZl+aJ6BpimvOtTV7nUhh+zhn7erDyzGkDBqPhsAFtBcBRHmS7r7pZLHivbwku4m1aWtXkngxfpe5V4zMquGIjdeFOZyPI+6gGGzNqfvq+dHjAxUNRvrtXTo9wginbZClgMw==
+  template:
+    metadata:
+      name: mysql-secret
+      namespace: default
