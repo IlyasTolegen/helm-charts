@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: echo-daemon
+spec:
+  selector:
+    matchLabels:
+      app: echo-daemon
+  template:
+    metadata:
+      labels:
+        app: echo-daemon
+    spec:
+      containers:
+      - name: echo
+        image: alpine:latest
+        command: ["/bin/sh", "-c"]
+        args: ["while true; do echo \"Hello from $(hostname) at $(date)\"; sleep 10; done"]
+        resources:
+          requests:
+            cpu: 50m
+            memory: 64Mi
